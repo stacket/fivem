@@ -32,6 +32,13 @@ ARG FIVEM_VER
 ARG FIVEM_NUM
 ARG DATA_VER
 
+ADD  ./cmd.sh /cmd.sh
+ADD  ./run.sh /run.sh
+
+RUN chmod +x /cmd.sh
+RUN chmod +x /run.sh
+
+
 LABEL maintainer="Spritsail <fivem@spritsail.io>" \
       org.label-schema.vendor="Spritsail" \
       org.label-schema.name="FiveM" \

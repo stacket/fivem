@@ -27,7 +27,4 @@ if [ -z "${NO_LICENSE_KEY}" ]; then
 fi
 
 
-exec /opt/cfx-server/FXServer \
-       +set citizen_dir /opt/cfx-server/citizen/ \
-       $CONFIG_ARGS \
-       $@
+/run.sh /opt/cfx-server/FXServer +set citizen_dir /opt/cfx-server/citizen/ $CONFIG_ARGS $@
